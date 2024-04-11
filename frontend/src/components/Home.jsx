@@ -176,7 +176,7 @@ let getstudentpass = (e)=>{
             <div id={style.form2} style={{display:form2?"block":"none"}}>
             <TextField value={teachermail} onChange={getteachermail} id="outlined-basic" sx={{width:"300px",marginTop:"20px" ,marginLeft:"50px"}} label="Enter your mail id" variant="outlined" />
             {/* <TextField value={teacherpass} onChange={getteacherpass} id="outlined-basic" sx={{width:"300px",marginTop:"20px" ,marginLeft:"50px"}} label="Enter your Password" variant="outlined" /> */}
-            <FormControl  value={adminpass} onChange={getadminpass} sx={{ m: 1, width: '34ch',marginLeft:"50px",marginTop:"20px" }} variant="outlined">
+            <FormControl  value={teacherpass} onChange={getteacherpass} sx={{ m: 1, width: '34ch',marginLeft:"50px",marginTop:"20px" }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Enter your Password</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
@@ -201,7 +201,7 @@ let getstudentpass = (e)=>{
             <div id={style.form3} style={{display:form3?"block":"none"}}>
             <TextField value={studentmail} onChange={getstudentmail} id="outlined-basic" sx={{width:"300px",marginTop:"20px" ,marginLeft:"50px"}} label="Enter your mail id" variant="outlined" />
             {/* <TextField value={studentpass} onChange={getstudentpass} id="outlined-basic" sx={{width:"300px",marginTop:"20px" ,marginLeft:"50px"}} label="Enter your Password" variant="outlined" /> */}
-            <FormControl  value={adminpass} onChange={getadminpass} sx={{ m: 1, width: '34ch',marginLeft:"50px",marginTop:"20px" }} variant="outlined">
+            <FormControl  value={studentpass} onChange={getstudentpass} sx={{ m: 1, width: '34ch',marginLeft:"50px",marginTop:"20px" }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Enter your Password</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
