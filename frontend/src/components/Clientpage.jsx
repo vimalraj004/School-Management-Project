@@ -27,8 +27,8 @@ const Staffpage = () => {
         <div id={style.profilecard}>
                <div id={style.card}>
                     <h1>Name:{data.name}</h1>
-                    <h2>Subject:{data.subject}</h2>
-                    <h2>Qualification:{data.qualification}</h2>
+                    <h2>Age:{data.age}</h2>
+                    <h2>Class :{data.std}</h2>
                     <h2>Mail:{data.mail}</h2>
                     <h2>Gender:{data.gender}</h2>
                     <div id={style.buttonbox2}>
