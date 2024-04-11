@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+/* ----------------------------------------Home---------------------------------- */
+#bg{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bg>h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 10px 10px 20px black;
+}
+#buttonbox{
+    height: 5vh;
+    width: 29%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+#buttonbox>button{
+    height: 100%;
+    width: 33.2%;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#forms{
+    height: 50vh;
+    width: 26.5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  box-shadow: 0px 0px 10px black;
+    margin-top: 20px;
+ 
+    overflow: hidden;
+    border-radius: 20px;
+}
+#form1,#form2,#form3{
+
+    height:80% ;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+/* ----------------------------------------Adminpage---------------------------------- */
+#Adminpage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Adminpage>h1{
+    font-size: 40px;
+    color:  white;
+    text-shadow: 10px 10px 20px black;
+}
+#teacherslist,#studentslist{
+    height: 40vh;
+    width: 20%;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+}
+
+#teacherslist>img,#studentslist>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+#teacherslist:hover,#studentslist:hover{
+   transform:scale(1.1);
+   transition: 0.5s;
+
+}
+#content{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    border-radius: 15px;
+    transition: height 0.5s;
+    bottom:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    /* opacity: 0; */
+    overflow: hidden;
+    color: white;
+    
+} 
+#teacherslist:hover #content,#studentslist:hover #content{
+    height: 70%;
+}
+/* ----------------------------------------Teacherspage---------------------------------- */
+#Teacherspage{
+    height:auto;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  
+}
+#Teacherspage>#navbar{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+#Teacherspage>#navbar>h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-left: 40px;
+    text-align: center;
+    width: 85%;
+}
+#Teacherspage>#navbar>Button{
+width: 15%;
+}
+#profilecard{
+    display: flex;
+    justify-content: space-evenly;
+   
+    flex-wrap:wrap;
+    margin-top: 30px;
+}
+#card{
+    height: 50vh;
+    width: 23%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+#buttonbox2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 45px;
+    width: 100%;
+    /* border: 2px solid red; */
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+#buttonbox2>#btn{
+  /* border: 2px solid black; */
+  box-shadow: 0px 0px 10px black;
+  color: white;
+}
+/* ----------------------------------------Teachersregpage---------------------------------- */
+
+#teachersregpage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#teachersregpage>h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+  
+}
+#teachersregpage>#form{
+    height: 90vh;
+    width: 25%;
+    background-color: white;
+    /* margin-top:20px ; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------------------Teacherseditpage---------------------------------- */
+#Teacherseditpage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Teacherseditpage>h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+  
+}
+#Teacherseditpage>#form{
+    height: 90vh;
+    width: 25%;
+    background-color: white;
+    /* margin-top:20px ; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------------------studentspage---------------------------------- */
+#Studentspage{
+    height:auto;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  
+}
+#Studentspage>#navbar{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+#Studentspage>#navbar>h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-left: 40px;
+    text-align: center;
+    width: 85%;
+}
+#Studentspage>#navbar>Button{
+width: 15%;
+}
+#profilecard{
+    display: flex;
+    justify-content: space-evenly;
+   
+    flex-wrap:wrap;
+    margin-top: 30px;
+}
+#card{
+    height: 50vh;
+    width: 23%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+#buttonbox2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 45px;
+    width: 100%;
+    /* border: 2px solid red; */
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+#buttonbox2>#btn{
+  /* border: 2px solid black; */
+  box-shadow: 0px 0px 10px black;
+  color: white;
+}
+/* ----------------------------------------studentsregpage---------------------------------- */
+
+#studentsregpage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#studentsregpage>h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+  
+}
+#studentsregpage>#form{
+    height: 90vh;
+    width: 25%;
+    background-color: white;
+    /* margin-top:20px ; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------------------studentseditpage---------------------------------- */
+#studentseditpage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#studentseditpage>h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+  
+}
+#studentseditpage>#form{
+    height: 90vh;
+    width: 25%;
+    background-color: white;
+    /* margin-top:20px ; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------------------staff page---------------------------------- */
+#staffpage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+#staffpage>h1{
+    font-size: 50px;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+#profilecard{
+    display: flex;
+    justify-content: space-evenly;
+   
+    flex-wrap:wrap;
+    margin-top: 30px;
+}
+#card{
+    height: 50vh;
+    width: 23%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+/* ----------------------------------------clientpage---------------------------------- */
+#clientpage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+#clientpage>h1{
+    font-size: 50px;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
