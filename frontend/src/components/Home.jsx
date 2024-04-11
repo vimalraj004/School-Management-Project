@@ -55,7 +55,7 @@ let getstudentpass = (e)=>{
         axios.post("https://school-management-project-4.onrender.com/adminlogin",payload2)
         .then((res)=>{console.log(res);
                        if(res.data=="usernot found"){
-                        alert("Invalid usermail")
+                        alert("Invalid username")
                        }
                        else if(res.data.password!=adminpass){
                         alert("Wrong password")
