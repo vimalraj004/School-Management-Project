@@ -52,7 +52,7 @@ let getstudentpass = (e)=>{
         adminpass
     }
     let adminbtn=()=>{
-        axios.post("http://localhost:555/adminlogin",payload2)
+        axios.post("https://school-management-project-4.onrender.com/adminlogin",payload2)
         .then((res)=>{console.log(res);
                        if(res.data=="usernot found"){
                         alert("Invalid usermail")
@@ -85,7 +85,7 @@ let getstudentpass = (e)=>{
         teacherpass
     }
     let teacherbtn=()=>{
-        axios.post("http://localhost:555/teacherlogin",payload)
+        axios.post("https://school-management-project-4.onrender.com/teacherlogin",payload)
         .then((res)=>{console.log(res);
                        if(res.data=="usernot found"){
                         alert("Invalid usermail")
@@ -109,7 +109,7 @@ let getstudentpass = (e)=>{
         studentpass
     }
     let studentbtn=()=>{
-        axios.post("http://localhost:555/studentlogin",payload1)
+        axios.post("https://school-management-project-4.onrender.com/studentlogin",payload1)
         .then((res)=>{console.log(res);
                        if(res.data=="usernot found"){
                         alert("Invalid usermail")

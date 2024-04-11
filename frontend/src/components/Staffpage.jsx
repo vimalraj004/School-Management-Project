@@ -8,7 +8,7 @@ const Staffpage = () => {
     let params=useParams()
      console.log(params);
   useEffect(()=>{
-    axios.get(`http://localhost:555/staffpage/${params.id}`)
+    axios.get(`https://school-management-project-4.onrender.com/staffpage/${params.id}`)
     .then((x)=>{console.log("i got the teachers data",x);
                 console.log(x.data);
                  setdata(x.data)})

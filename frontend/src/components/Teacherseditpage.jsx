@@ -108,7 +108,7 @@ const Teacherseditpage = () => {
     let stringregex = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
     let passregex=/^[a-zA-Z]+[0-9]{2,4}[!@#$%]{2,4}$/
      useEffect(()=>{
-        axios.get(`http://localhost:555/teacherseditpage/${params.id}`)
+        axios.get(`https://school-management-project-4.onrender.com/teacherseditpage/${params.id}`)
         .then((x)=>{console.log("i got particular staff details",x);
                     setname(x.data.name)
                     setmail(x.data.mail)
@@ -125,7 +125,7 @@ const Teacherseditpage = () => {
         if(name.length>=4&&name.match(stringregex)&&mail.match(emailregex)&&qualification.length>=3&&qualification.match(stringregex)&&subject.length>=4&&subject.match(stringregex)&&password.length>=8&&password.match(passregex)&&confirmpass.match(password)){
             console.log(payload);
             
-           axios.post(`http://localhost:555/teachersupdatedata/${params.id}`,payload)
+           axios.post(`https://school-management-project-4.onrender.com/teachersupdatedata/${params.id}`,payload)
            .then((x)=>{console.log("staff data updated",x);})
            .catch(()=>{console.log("failed to update the staff data");})
             navigate("/teacherspage")

@@ -13,14 +13,14 @@ const Teacherspage = () => {
     // console.log("heloo");
   }
   useEffect(()=>{
-    axios.get("http://localhost:555/teacherslist")
+    axios.get("https://school-management-project-4.onrender.com/teacherslist")
     .then((x)=>{console.log("i got the teachers data");
                  setdata(x.data)})
     .catch(()=>{console.log("failed to get the teachers data");})
    
   },[refresh])
   let Delete=(id)=>{
-    axios.post(`http://localhost:555/deleteteacherscard/${id}`)
+    axios.post(`https://school-management-project-4.onrender.com/deleteteacherscard/${id}`)
     .then(()=>{console.log("data deleted");})
     .catch(()=>{console.log("failed to delete the data");})
     setrefresh(!refresh)

@@ -119,7 +119,7 @@ const Teachersregpage = () => {
         if(name.length>=4&&name.match(stringregex)&&mail.match(emailregex)&&qualification.length>=3&&qualification.match(stringregex)&&subject.length>=4&&subject.match(stringregex)&&password.length>=8&&password.match(passregex)&&confirmpass.match(password)){
             console.log(payload);
             
-           axios.post("http://localhost:555/teachersregpage",payload)
+           axios.post("https://school-management-project-4.onrender.com/teachersregpage",payload)
            .then((res)=>{ console.log("data posted to server",res);
                           console.log(res.data);
                        if(res.data=="usermail is already in use")
